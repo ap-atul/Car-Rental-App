@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DriverApplication</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_car">Map</string>
+    <string name="title_activity_car2">Map</string>
+    <string name="title_activity_driver_final">Map</string>
+    <string name="password">password</string>
+    <string name="email">Email</string>
+</resources>

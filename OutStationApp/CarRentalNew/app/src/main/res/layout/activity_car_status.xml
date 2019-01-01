@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarStatusActivity">
+    <TextView
+        android:id="@+id/reqTv"
+        android:text="No updates "
+        android:textSize="22sp"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:visibility="gone"
+        android:layout_margin="4dp"
+        android:text="Grant Request"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_below="@+id/reqTv"
+        android:id="@+id/grantRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:text="refresh"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

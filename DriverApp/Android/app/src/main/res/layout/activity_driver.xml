@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverActivity">
+
+
+    <EditText
+        android:id="@+id/distance"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:hint="Enter Distance"/>
+    <EditText
+        android:padding="16dp"
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/distance"
+        android:layout_margin="25dp"
+        android:textSize="16dp"
+        android:hint="Enter number of days"/>
+    <Button
+        android:id="@+id/date"
+        android:layout_below="@id/time"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate cost"/>
+    <TextView
+        android:id="@+id/t_cost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/date"
+        android:layout_margin="25dp"
+        android:textSize="20dp"
+        android:text="Total Cost"/>
+    <Button
+        android:id="@+id/cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t_cost"
+        android:layout_margin="25dp"
+        android:text="Cash Accepted"/>
+
+</RelativeLayout>

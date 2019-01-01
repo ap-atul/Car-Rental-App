@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OutStation</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_journey_details">Map</string>
+    <string name="emptyText">--/--</string>
+</resources>

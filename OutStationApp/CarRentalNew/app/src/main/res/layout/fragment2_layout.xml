@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+    android:layout_margin="32dp"
+    android:padding="24dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:backgroundTint="#fff"
+        android:background="@drawable/cardview_border"
+        android:layout_margin="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Car Type"
+        android:id="@+id/textTitle"/>
+
+    <RelativeLayout
+        android:background="@drawable/cardview_border"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/CartypeNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:text="Next" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/seats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Seaters" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_below="@+id/seats"
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="Petrol/Diesel" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_below="@+id/type"
+        android:id="@+id/city_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="City" />
+
+    </RelativeLayout>
+</RelativeLayout>
