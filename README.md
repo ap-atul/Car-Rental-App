@@ -1,5 +1,5 @@
 # OutStation
-SDL mini project. A car rental app using Android, Nodejs and MySql. OUtStaion allows it's users not only to rent cars but also rent thier cars out to other users;
+SDL mini project. A car rental app using Android, Nodejs and MySql. OutStation allows it's users not only to rent cars but also rent thier cars out to other users;
 All you have to do to rent out a car is fill somebasic details and location of car and that's iit the car can then be rented by others. OutStation also provides live tracking of the staate of transaction of car to the tenant , owner and driver of the car which is assigned by the app.
 
 
@@ -52,4 +52,4 @@ ifconfig
 
 * [Nodejs](https://nodejs.org/en/docs/) - The web framework used
 * [Mysql](https://dev.mysql.com/doc/refman/8.0/en/) - Relational Database Management
-* [Android Studio] (https://developer.android.com/docs/) -  Android app development framework 
+* [Android] (https://developer.android.com/docs/) -  Android app development framework 
