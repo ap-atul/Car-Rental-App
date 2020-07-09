@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateSelector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:elevation="4dp">
+            <ViewFlipper
+                android:id="@+id/home_viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/rent_landscape2"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cityscapeflipped" />
+                <ImageView
+                    android:id="@+id/rent_landscape"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cityscape" />
+            </ViewFlipper>
+
+            <ImageView
+                android:id="@+id/porsche_rent"
+                android:layout_marginTop="140dp"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/porsche911" />
+
+            <Button
+                android:id="@+id/btnrent"
+                android:textSize="17dp"
+                android:backgroundTint="#999"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/porsche_rent"
+                android:layout_centerHorizontal="true"
+                android:elevation="16dp"
+                android:text="Rent a car"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="2dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:elevation="4dp">
+
+            <ViewFlipper
+                android:transitionName="landscape_bg"
+                android:id="@+id/home_viewflipper2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/lend_landscape2"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cityscapeflipped" />
+
+                <ImageView
+                    android:id="@+id/lend_landscape"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cityscape" />
+            </ViewFlipper>
+
+            <ImageView
+                android:id="@+id/porsche_lend"
+                android:layout_marginTop="140dp"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/porsche911right" />
+
+            <Button
+                android:id="@+id/btnlend"
+                android:textSize="17dp"
+                android:backgroundTint="#999"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/porsche_lend"
+                android:layout_centerHorizontal="true"
+                android:elevation="16dp"
+                android:text="Lend a car"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

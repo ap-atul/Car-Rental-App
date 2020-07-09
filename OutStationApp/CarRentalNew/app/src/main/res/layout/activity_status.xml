@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingBottom="64dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/final_tv1"
+                android:textColor="@color/text_color_selector_ac"
+                android:background="@drawable/cardview_border"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Confirming your request with the owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/final_tv2"
+                android:textColor="@color/text_color_selector_ac"
+                android:background="@drawable/cardview_border"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Assigning a driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/final_tv3"
+                android:textColor="@color/text_color_selector_ac"
+                android:background="@drawable/cardview_border"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Getting your car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/final_tv4"
+                android:textColor="@color/text_color_selector_ac"
+                android:background="@drawable/cardview_border"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Reaching you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/final_tv5"
+                android:textColor="@color/text_color_selector_ac"
+                android:background="@drawable/cardview_border"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Journey Started"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/final_tv6"
+                android:textColor="@color/text_color_selector_ac"
+                android:background="@drawable/cardview_border"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Journey Ended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_margin="16dp"
+                android:layout_below="@+id/locationll"
+                android:elevation="8dp"
+                android:id="@+id/bill"
+                android:background="@drawable/cardview_border2"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:padding="16dp"
+                        android:gravity="center_vertical"
+                        android:background="#cfd8dc"
+                        android:text="Distance"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_below="@+id/distance"
+                        android:id="@+id/fare"
+                        android:padding="16dp"
+                        android:background="#cfd8dc"
+                        android:gravity="center_vertical"
+                        android:text="Fare"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_below="@+id/fare"
+                        android:id="@+id/driver_cost"
+                        android:padding="16dp"
+                        android:background="#cfd8dc"
+                        android:gravity="center_vertical"
+                        android:text="Driver Cost"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_below="@+id/driver_cost"
+                        android:id="@+id/total_fare"
+                        android:padding="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#cfd8dc"
+                        android:gravity="center_vertical"
+                        android:text="Total Fare"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/startDate"
+                        android:padding="16dp"
+                        android:gravity="center_vertical"
+                        android:background="#ffffff"
+                        android:text="@string/emptyText"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_below="@+id/startDate"
+                        android:id="@+id/endDate"
+                        android:padding="16dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:text="@string/emptyText"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_below="@+id/endDate"
+                        android:id="@+id/city"
+                        android:padding="16dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:text="@string/emptyText"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:layout_below="@+id/city"
+                        android:id="@+id/total"
+                        android:padding="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:text="@string/emptyText"
+                        android:textColor="#000000"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/refresh"
+        android:layout_margin="16dp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Refresh Status"
+        android:background="@drawable/cardview_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

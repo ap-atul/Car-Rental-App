@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:background="#455a64"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </RelativeLayout>
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/title"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="Let's find you a ride"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <LinearLayout
+        android:layout_below="@+id/title"
+        android:elevation="8dp"
+        android:id="@+id/datepickers"
+        android:background="#ffffff"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="#cfd8dc"
+            android:layout_margin="16dp"
+            android:text="Start Date"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:padding="16dp"
+            android:background="#cfd8dc"
+            android:gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="End Date"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:padding="16dp"
+            android:background="#cfd8dc"
+            android:gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="Your location"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:padding="16dp"
+            android:background="#cfd8dc"
+            android:gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:text="Your City"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/datepickers"
+        android:id="@+id/choose_location_rl"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:id="@+id/tvmap"
+            android:textColor="#17b409"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Choose your location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#ffffff"
+            android:layout_below="@id/tvmap"
+            android:elevation="4dp">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                tools:context=".JourneyDetailsActivity" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:elevation="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="382dp">
+            <ImageView
+                android:id="@+id/markerimg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_add_location_black_24dp" />
+        </RelativeLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_setLocation"
+            android:layout_margin="16dp"
+            android:elevation="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:layout_centerHorizontal="true"
+            android:background="#17B409"
+            android:text="Select"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/search"
+        android:layout_marginEnd="48dp"
+        android:elevation="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Search"
+        android:textColor="#fff" />
+</RelativeLayout>

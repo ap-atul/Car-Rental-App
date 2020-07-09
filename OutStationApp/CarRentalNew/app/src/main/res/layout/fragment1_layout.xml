@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="32dp"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:backgroundTint="#ffffff"
+        android:background="@drawable/cardview_border"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CarDetails"
+        android:textSize="25sp" />
+    <RelativeLayout
+        android:background="@drawable/cardview_border"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/CarDetailsNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:text="Next" />
+
+        <EditText
+            android:id="@+id/manu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPersonName"
+            android:hint="Manufacturer" />
+
+        <!--
+    <EditText
+        android:id="@+id/model_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manu_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:hint="Model Name" />
+        -->
+
+
+
+        <EditText
+            android:id="@+id/regNo"
+            android:layout_below="@id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:hint="Reg No" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="254dp"
+            android:layout_height="42dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="83dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNavFrag1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnNavFrag2"
+            android:text="Go to Fragment2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNavFrag2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnNavFrag3"
+            android:text="Go to Fragment3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNavFrag3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnNavSecondActivity"
+            android:text="Go to Second Activity"/>
+        -->
+
+    </RelativeLayout>
+</RelativeLayout>

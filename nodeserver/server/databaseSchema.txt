@@ -1,0 +1,79 @@
+CREATE TABLE users(
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    contact VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE driver (
+    driver_id VARCHAR(255) DEFAULT NULL,
+    transaction_id VARCHAR(100) DEFAULT NULL,
+    name VARCHAR(100) NOT NULL,
+    rate_perday INT DEFAULT 0,
+    contact VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE model(
+    name VARCHAR(100) NOT NULL,
+    model_no INT PRIMARY KEY AUTO_INCREMENT
+);
+
+insert into model(name) values("SUV");
+insert into model(name) values("Sports");
+insert into model(name) values("Electric");
+insert into model(name) values("Compact");
+insert into model(name) values("Loaders");
+
+CREATE TABLE owner(
+    owner_id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE cars(
+    car_id INT PRIMARY KEY AUTO_INCREMENT,
+    owner_id VARCHAR(255) NOT NULL,
+    booking INT NOT NULL,
+    regNo VARCHAR(100) NOT NULL,
+    rating INT NOT NULL,
+    image VARCHAR(100) NOT NULL,
+    verified BOOL NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    rate_km DECIMAL(10, 2) NOT NULL,
+    model_no INT REFERENCES model(model_no) ON DELETE CASCADE,
+    maxTimePeriod INT NOT NULL,
+    loc_lng VARCHAR(100) NOT NULL,
+    loc_lat VARCHAR(100) NOT NULL
+);
+
+
+
+CREATE TABLE location(
+    longitude VARCHAR(100) NOT NULL,
+    latitude VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    address VARCHAR(300) NOT NULL,
+    pincode VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE transaction(
+    transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    driver_id VARCHAR(255) DEFAULT NULL,
+    car_id VARCHAR(100) NOT NULL,
+    datetime_ts VARCHAR(100) NOT NULL,
+    startdate_ts VARCHAR(100) NOT NULL,
+    enddate_ts VARCHAR(100) NOT NULL,
+    sl_lat VARCHAR(100) NOT NULL,
+    sl_lng VARCHAR(100) NOT NULL,
+    dl_lng VARCHAR(100) NOT NULL,
+    dl_lat VARCHAR(100) NOT NULL,
+    user_id VARCHAR(100) NOT NULL,
+    total_cost INT DEFAULT 0,
+    driver_cost INT DEFAULT 0,
+    car_cost INT DEFAULT 0,
+    journey_distance DECIMAL(10,2) DEFAULT 0
+);
