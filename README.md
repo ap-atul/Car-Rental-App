@@ -12,6 +12,7 @@ All you have to do to rent out a car is fill some basic details and the location
 ### Prerequisites
 
 What things you need to install the software and how to install them
+java
 NodeJS
 Android Studio 
 Mysql Server 8.0
